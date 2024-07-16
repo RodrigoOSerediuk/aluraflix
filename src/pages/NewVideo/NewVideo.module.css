@@ -1,0 +1,134 @@
+.gContainerVideo {
+    width: 1440px;
+    max-width: 1800px;
+    font-family: var(--fonte);
+    background: var(--overlay);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 47px;
+    padding: 30px 50px;
+    padding-block-start: 10px;
+
+}
+
+.gContainerTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.gContainerTitulo h1 {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.gContainerForm {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.gContainerForm form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.gContainerForm h2 {
+    font-size: 36px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    padding: 20px 0px;
+    margin-bottom: 40px;
+}
+
+.gContainerForm div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    row-gap: 20px;
+    column-gap: 42px;
+    padding: 20px 0px;
+}
+
+@media (max-width: 1024px) {
+    .gContainerVideo {
+        display: flex;
+        padding: 20px 30px;
+        width: auto;
+        height: auto;
+    }
+
+    .gContainerTitulo h1 {
+        font-size: 48px;
+    }
+
+    .gContainerForm h2 {
+        font-size: 30px;
+    }
+
+    .gContainerForm div {
+        column-gap: 30px;
+    }
+
+    .gContainerForm form {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gContainer {
+        display: flex;
+        padding: 15px 20px;
+    }
+
+    .gContainerTitulo h1 {
+        font-size: 36px;
+    }
+
+    .gContainerForm h2 {
+        font-size: 24px;
+    }
+
+    .gContainerForm div {
+        flex-direction: column;
+        row-gap: 10px;
+        column-gap: 0;
+    }
+
+    .gContainerForm form {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .gContainerVideo {
+        display: flex;
+        width: auto;
+        padding: 10px 15px;
+    }
+
+    .gContainerTitulo h1 {
+        font-size: 28px;
+    }
+
+    .gContainerForm h2 {
+        font-size: 20px;
+    }
+
+    .gContainerForm div {
+        row-gap: 5px;
+    }
+
+    .gContainerForm form {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}
